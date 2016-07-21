@@ -1,6 +1,9 @@
 {
   "namespace": "cloud.user",
   "messages": {
+    "User": {
+      "emailAddress": "string"
+    },
     "AddUser": {
       "emailAddress": "string"
     },
@@ -8,10 +11,25 @@
       "id": "string option",
       "code": "int",
       "status": "string option"
+    },
+
+    "GetUser": {
+      "id": "string"
+    },
+
+    "GetUserReply": {
+      "user": "User option",
+      "code": "int",
+      "status": "string option"
     }
+
   },
   "services": {
     "IUserService": {
+      "get": {
+        "request": "GetUser",
+        "response": "GetUserReply"
+      },
       "post": {
         "request": "AddUser",
         "response": "AddUserReply"

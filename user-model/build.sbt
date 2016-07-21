@@ -11,5 +11,6 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "codecraft" %% "codegen" % "1.0.0-SNAPSHOT"
+  "codecraft" %% "codegen" % "1.0.0-SNAPSHOT",
+  "com.typesafe.play" %% "play-json" % "2.5.4"
 )
