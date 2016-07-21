@@ -1,0 +1,23 @@
+{
+  "namespace": "cloud.user",
+  "messages": {
+    "AddUser": {
+      "emailAddress": "string"
+    },
+    "AddUserReply": {
+      "id": "string option",
+      "code": "int",
+      "status": "string option"
+    }
+  },
+  "services": {
+    "IUserService": {
+      "post": {
+        "request": "AddUser",
+        "response": "AddUserReply"
+      }
+    }
+  },
+  "events": {
+  }
+}
